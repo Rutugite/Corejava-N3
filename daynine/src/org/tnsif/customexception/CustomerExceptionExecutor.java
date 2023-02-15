@@ -10,9 +10,14 @@ public class CustomerExceptionExecutor {
 		s.close();
 		try
 		{
-			if(id!="rutujagite307@gmail.com" &&
-					password!="abc@123")
+			if(id.equals("rutujagite307@gmail.com") && password.equals("abc@123"))
+			{
 				throw new LoginCredential("Invalid Credential");
+			}
+			else
+			{
+				throw new LoginCredential("Credential matched");
+			}
 			   
 		} 
 		catch(LoginCredential e)

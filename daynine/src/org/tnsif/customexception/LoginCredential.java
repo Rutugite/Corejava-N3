@@ -13,7 +13,6 @@ public class LoginCredential extends Exception{
 	public String toString() {
 		return "LoginCredential [str=" + str + "]";
 	}
-
 		
 }
 	
