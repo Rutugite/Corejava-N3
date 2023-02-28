@@ -1,0 +1,20 @@
+package org.tnsif.junit;
+import static org.junit.Assume.assumeTrue;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
+
+import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.Test;
+//program to demonstrate on assumption
+@SuppressWarnings("unused")
+public class JunitAssumptionDemo {
+	@Test
+	void test() {
+		Assumptions.assumeTrue(12==12);
+	}
+	@Test
+	void accept() {
+		Assumptions.assumeFalse(12==12);
+	}
+
+}
